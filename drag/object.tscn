@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqng8xeocdh5k"]
+
+[ext_resource type="Script" uid="uid://deec5ej4t0vw1" path="res://drag/drag.gd" id="1_62gtl"]
+[ext_resource type="Texture2D" uid="uid://cqudeookypppr" path="res://Assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Buildings/Red Buildings/House1.png" id="2_xqfhm"]
+
+[node name="Object" type="Sprite2D"]
+texture = ExtResource("2_xqfhm")
+script = ExtResource("1_62gtl")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -59.0
+offset_top = -80.0
+offset_right = 60.0
+offset_bottom = 77.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
