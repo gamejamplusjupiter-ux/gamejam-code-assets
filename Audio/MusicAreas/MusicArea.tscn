@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://pckf3d46pv2o"]
+
+[ext_resource type="Script" uid="uid://v1k2h6aso384" path="res://Audio/MusicAreas/music_area.gd" id="1_fyhx1"]
+
+[node name="MusicArea" type="Area2D"]
+script = ExtResource("1_fyhx1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
