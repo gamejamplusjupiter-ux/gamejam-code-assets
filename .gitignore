@@ -1,3 +1,18 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# macOS
+.DS_Store
+__MACOSX/
+._*
+
+# Ignora backups e temporários
+*.tmp
+*.bak
+*.swp
+
+# Ignora arquivos de Godot que não precisam ir pro repositório
+.import/
+export.cfg
+export_presets.cfg

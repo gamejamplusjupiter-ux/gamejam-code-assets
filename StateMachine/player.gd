@@ -5,6 +5,8 @@ extends CharacterBody2D
 @onready var state_machine: Node = $StateMachine
 @onready var state: Label = $State
 
+#var music_area_array : Array[MusicArea] = [] # array to stack all entered music areas
+
 func _ready() -> void:
 	state_machine.init(self)
 	
