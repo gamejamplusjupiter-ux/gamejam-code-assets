@@ -9,7 +9,6 @@ func _process(delta: float) -> void:
 		position = get_global_mouse_position() - of
 
 func _on_button_button_down() -> void:
-	print("a")
 	is_dragging = true
 	of = get_global_mouse_position() - global_position
 
